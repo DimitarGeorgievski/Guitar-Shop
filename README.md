@@ -1,69 +1,46 @@
-# React + TypeScript + Vite
+# Guitar Shop 🎸
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Guitar Shop е веб-апликација направена со React, TailwindCSS и GraphQL која прикажува листа на модели на гитари. Апликацијата повлекува податоци преку GraphQL и овозможува преглед на деталите за секој модел.
 
-Currently, two official plugins are available:
+## ✅ Карактеристики
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Прикажување на сите модели од GraphQL API  
+- Динамичко вчитување на податоци  
+- Детален преглед за секој модел  
+- Респонзивен дизајн  
+- Tailwind CSS за стилизирање  
+- React Router за навигација  
 
-## Expanding the ESLint configuration
+## 🛠️ Технологии
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React  
+- TypeScript  
+- React Router  
+- Tailwind CSS  
+- GraphQL  
+- Apollo Client  
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Локално подигнување
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+Следи ги следниве чекори за да ја стартуваш апликацијата локално:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/DimitarGeorgievski/Guitar-Shop.git
+cd Guitar-Shop
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Отвори ја апликацијата во прелистувач на:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```
+http://localhost:5173
+```
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🔗 GraphQL API
+
+Апликацијата користи GraphQL API на следнава адреса:
+
+```
+https://graphql-api-brown.vercel.app/api/graphql
 ```
