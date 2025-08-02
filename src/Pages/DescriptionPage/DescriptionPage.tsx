@@ -98,7 +98,7 @@ export function DescriptionPage() {
             <p className="text-left px-36 text-2xl pt-32">
               {uniqueGuitarr.description}
             </p>
-            <ul className="pl-42 mt-16 mb-52 list-disc text-2xl">
+            <ul className="pl-41 mt-16 mb-52 list-disc text-2xl">
               {Object.entries(uniqueGuitarr.specs)
                 .filter(([key]) => key !== "__typename")
                 .map(([key, value]) => (
