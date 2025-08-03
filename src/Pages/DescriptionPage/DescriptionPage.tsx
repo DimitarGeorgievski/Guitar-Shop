@@ -48,7 +48,7 @@ export function DescriptionPage() {
                 style={{ fill: "var(--fillg)" }}
               />
             </svg>
-            <p>Back To Home</p>
+            <p>Back To List</p>
           </div>
         </Link>
         <div className="pt-2 pl-28">
