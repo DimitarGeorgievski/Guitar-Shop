@@ -82,7 +82,7 @@ export function ProductPage() {
     ...new Set((currentBrand?.categories as string[]) || []),
   ];
   return (
-    <div className="w-[1440px]">
+    <div className="w-[1440px] mx-auto">
       <section className="min-h-[600px] relative">
         <Link to={`/`}>
           <div className="flex gap-4 pt-8 pl-8">

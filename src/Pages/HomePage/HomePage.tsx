@@ -10,7 +10,7 @@ export function HomePage() {
   if (error)
     return <p className="text-5xl text-center">Error: {error.message}(</p>;
   return (
-    <div className="w-[1440px] relative">
+    <div className="w-[1440px] mx-auto relative">
       <section className="min-h-[750px] relative">
         <div className="pt-16 pl-28">
           <Header />

@@ -32,7 +32,7 @@ export function DescriptionPage() {
       .replace(/^./, (str) => str.toUpperCase());
   }
   return (
-    <div className="w-[1440px] relative">
+    <div className="w-[1440px] mx-auto relative">
       <section className="relative">
         <Link to={`/`}>
           <div className="flex gap-4 pt-8 pl-8">
